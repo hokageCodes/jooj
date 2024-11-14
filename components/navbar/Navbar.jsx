@@ -63,7 +63,7 @@ export default function Navbar() {
                         <li><a href="#about" onClick={toggleMenu} className="hover:text-white">About Rareblocks</a></li>
                     </ul>
                     <span className="hover:text-white hidden">Book free Agent evaluation</span>
-                    <button onClick={toggleMenu} className="bg-[#C5D3AD] hidden text-ctaText px-6 py-3 rounded-lg hover:bg-opacity-80 hover:text-white">
+                    <button onClick={toggleMenu} className="but text-ctaText px-6 py-3 rounded-lg hover:bg-opacity-80 hover:text-white">
                         Get Instant Quote
                     </button>
                 </div>

@@ -39,7 +39,7 @@ const AgentPerformanceSection = () => {
         {/* Image Section */}
         <div className="flex-1">
           <Image
-            src="/assets/illustration.webp" // Update with the actual path to your image
+            src="/assets/Illustration.webp"
             alt="Tasks preview"
             width={500}
             height={300}
