@@ -16,7 +16,7 @@ export default function HeroSection() {
     <section className="relative flex flex-col md:flex-row items-center justify-center h-screen bg-background text-white px-4 sm:px-8 lg:px-0">
       {/* Skewed Text - Always at the top, even on mobile */}
       <motion.div
-        className="top-0 left-12 absolute md:top-8 md:left-16 text-accent md:rotate-[-10deg] sm:rotate-0 md:rotate-[-15deg]"
+        className="hidden md:block top-0 left-12 absolute md:top-8 md:left-16 text-accent md:rotate-[-10deg] sm:rotate-0 md:rotate-[-15deg]"
         style={{
           fontFamily: "Reenie Beanie",
           fontSize: '44.78px',
@@ -34,7 +34,7 @@ export default function HeroSection() {
       <div className="flex-1 text-center sm:text-left space-y-4 sm:pl-4 md:pl-[144px]">
         {/* Animated Badge */}
         <motion.div
-          className="w-[350px] mt-64 md:mt-[-50px] sm:w-[200px] md:w-[400px] h-[40px] inline-block px-4 py-2 rounded-full bg-[#E4E4E7] text-lg text-[#18181B] font-medium text-center"
+          className="w-[350px] mt-32 md:mt-[-50px] sm:w-[200px] md:w-[400px] h-[40px] inline-block px-4 py-2 rounded-full bg-[#E4E4E7] text-lg text-[#18181B] font-medium text-center"
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
