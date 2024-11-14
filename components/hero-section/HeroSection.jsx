@@ -16,7 +16,7 @@ export default function HeroSection() {
     <section className="relative flex flex-col md:flex-row items-center justify-center h-screen bg-background text-white px-4 sm:px-8 lg:px-0">
       {/* Skewed Text - Always at the top, even on mobile */}
       <motion.div
-        className="absolute top-8 left-16 text-accent rotate-[-10deg] sm:rotate-0 md:rotate-[-15deg]"
+        className="top-0 left-12 absolute md:top-8 md:left-16 text-accent md:rotate-[-10deg] sm:rotate-0 md:rotate-[-15deg]"
         style={{
           fontFamily: "Reenie Beanie",
           fontSize: '44.78px',
@@ -34,7 +34,7 @@ export default function HeroSection() {
       <div className="flex-1 text-center sm:text-left space-y-4 sm:pl-4 md:pl-[144px]">
         {/* Animated Badge */}
         <motion.div
-          className="w-[250px] sm:w-[200px] md:w-[400px] h-[40px] inline-block px-4 py-2 rounded-full bg-[#E4E4E7] text-lg text-[#18181B] font-medium text-center"
+          className="w-[350px] mt-72 md:mt-[-50px] sm:w-[200px] md:w-[400px] h-[40px] inline-block px-4 py-2 rounded-full bg-[#E4E4E7] text-lg text-[#18181B] font-medium text-center"
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -86,7 +86,7 @@ export default function HeroSection() {
 
         {/* Pricing Information */}
         <div className="flex flex-col sm:flex-row justify-center md:justify-start space-y-4 sm:space-y-0 md:space-x-8 mt-6 text-md sm:text-lg lg:text-lg font-semibold">
-          <div className="text-center flex items-center gap-2">
+          <div className="text-left md:text-center flex items-center gap-2">
             <p className="text-2xl lg:text-3xl text-headingText">$2 million</p>
             <p className="text-gray-400 text-paragraphText">average policy coverage for as low as</p>
           </div>
@@ -102,7 +102,7 @@ export default function HeroSection() {
         <motion.img
           src="/assets/hero-img.webp"
           alt="Document Illustration"
-          className="floating-document w-24 sm:w-32 md:w-48 lg:w-[600px]"
+          className="mt-[-100px] floating-document w-64 sm:w-32 md:w-48 lg:w-[600px]"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
