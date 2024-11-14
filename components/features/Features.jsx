@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 "use client"
 import { motion } from "framer-motion";
+import Image from 'next/image';
 
 export default function InsuranceSection() {
   return (
@@ -10,7 +11,7 @@ export default function InsuranceSection() {
         <h2 className="text-sm font-semibold text-paragraphText">
           We believe in the future of AI
         </h2>
-        <p className="text-3xl font-bold text-headingText mt-4">
+        <p className="text-3xl text-center font-bold text-headingText mt-4">
           Your AI Agent is cool! Probably cooler than humans.
           Give it a bit more confidence with insurance coverage
         </p>
@@ -19,7 +20,7 @@ export default function InsuranceSection() {
       {/* Cards Container */}
       <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 px-4 md:px-20">
         {/* Card 1 */}
-        <div>
+        <div className="max-w-[388px] mx-auto">
           <h3 className="text-lg font-semibold text-headingText text-left mb-2 max-w-[250px]">Free Evaluation of your AI Agent</h3>
           <p className="text-paragraphText text-left max-w-xs mb-4">
             Get a jooj score on your Agent's accuracy and performance after a free evaluation by our AI data science team
@@ -27,7 +28,7 @@ export default function InsuranceSection() {
           <motion.div
             className="relative rounded-tl-lg overflow-hidden"
             style={{
-              width: "388px",
+              width: "100%",
               height: "283px",
               borderRadius: "10px 0px 0px 0px",
             }}
@@ -36,26 +37,26 @@ export default function InsuranceSection() {
             transition={{ duration: 0.5, delay: 0.1 }}
           >
             {/* Gradient Background Image */}
-            <img
+            <Image
               src="/assets/bg-gradient.webp"
               alt="Gradient Background"
-              className="absolute inset-0 w-full h-full object-contain z-0"
+              layout="fill"
+              objectFit="cover"
+              className="absolute inset-0 z-0"
             />
             {/* Overlay Image */}
-            <img
+            <Image
               src="/assets/img1.webp"
               alt="Overlay Image"
-              style={{
-                width: "282px",
-                height: "213.75px",
-              }}
-              className="absolute top-20 left-12 z-10"
+              width={282}
+              height={214}
+              className="absolute top-20 left-5 z-10"
             />
           </motion.div>
         </div>
 
         {/* Card 2 */}
-        <div>
+        <div className="max-w-[388px] mx-auto">
           <h3 className="text-lg font-semibold text-headingText text-left mb-2 max-w-xs">Discover potential risks and liabilities</h3>
           <p className="text-paragraphText text-left max-w-[200px] mb-4">
             Receive a custom report on the potential risks/liabilities and costs associated
@@ -63,7 +64,7 @@ export default function InsuranceSection() {
           <motion.div
             className="relative rounded-tl-lg overflow-hidden"
             style={{
-              width: "388px",
+              width: "100%",
               height: "283px",
               borderRadius: "10px 0px 0px 0px",
             }}
@@ -72,26 +73,26 @@ export default function InsuranceSection() {
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             {/* Gradient Background Image */}
-            <img
+            <Image
               src="/assets/bg-gradient.webp"
               alt="Gradient Background"
-              className="absolute inset-0 w-full h-full object-cover z-0"
+              layout="fill"
+              objectFit="cover"
+              className="absolute inset-0 z-0"
             />
             {/* Overlay Image */}
-            <img
+            <Image
               src="/assets/img2.webp"
               alt="Overlay Image"
-              style={{
-                width: "282px",
-                height: "213.75px",
-              }}
-              className="absolute bottom-4 left-12 z-10"
+              width={282}
+              height={214}
+              className="absolute bottom-4 left-5 z-10"
             />
           </motion.div>
         </div>
 
         {/* Card 3 */}
-        <div>
+        <div className="max-w-[388px] mx-auto">
           <h3 className="text-lg font-semibold text-headingText text-left max-w-xs mb-2">Get coverage for your Agent’s liabilities</h3>
           <p className="text-paragraphText text-left mb-4 max-w-xs">
             Review options for liability coverage unique to your agent’s industry, jooj score and AI fundamentals
@@ -99,7 +100,7 @@ export default function InsuranceSection() {
           <motion.div
             className="relative rounded-tl-lg overflow-hidden"
             style={{
-              width: "388px",
+              width: "100%",
               height: "283px",
               borderRadius: "10px 0px 0px 0px",
             }}
@@ -108,20 +109,20 @@ export default function InsuranceSection() {
             transition={{ duration: 0.5, delay: 0.3 }}
           >
             {/* Gradient Background Image */}
-            <img
+            <Image
               src="/assets/bg-gradient.webp"
               alt="Gradient Background"
-              className="absolute inset-0 w-full h-full object-cover z-0"
+              layout="fill"
+              objectFit="cover"
+              className="absolute inset-0 z-0"
             />
             {/* Overlay Image */}
-            <img
+            <Image
               src="/assets/img3.webp"
               alt="Overlay Image"
-              style={{
-                width: "282px",
-                height: "213.75px",
-              }}
-              className="absolute top-20 left-12 z-10"
+              width={282}
+              height={214}
+              className="absolute top-20 left-5 z-10"
             />
           </motion.div>
         </div>

@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-page-custom-font */
 import Navbar from "@/components/navbar/Navbar";
-import "./globals.css";
 import Footer from "@/components/footer/Footer";
+import "./globals.css";
 
 export const metadata = {
   title: "AI Agent Liability Insurance | Protect Your AI Agents with Rareblocks",
@@ -68,11 +68,11 @@ export default function RootLayout({ children }) {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet" />
-        <link rel="icon" href="/favicon.ico" /> {/* Replace with actual favicon path */}
+        <link rel="icon" href="/favicon.ico" />
       </head>
-      <body className="bg-background">
+      <body className="bg-background flex flex-col min-h-screen">
         <Navbar />
-        {children}
+        <main className="flex-grow">{children}</main>
         <Footer />
       </body>
     </html>
