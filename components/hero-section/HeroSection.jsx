@@ -34,7 +34,7 @@ export default function HeroSection() {
       <div className="flex-1 text-center sm:text-left space-y-4 sm:pl-4 md:pl-[144px]">
         {/* Animated Badge */}
         <motion.div
-          className="w-[350px] mt-48 md:mt-[-50px] sm:w-[200px] md:w-[400px] h-[40px] inline-block px-4 py-2 rounded-full bg-[#E4E4E7] text-lg text-[#18181B] font-medium text-center"
+          className="w-[350px] mt-64 md:mt-[-50px] sm:w-[200px] md:w-[400px] h-[40px] inline-block px-4 py-2 rounded-full bg-[#E4E4E7] text-lg text-[#18181B] font-medium text-center"
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
