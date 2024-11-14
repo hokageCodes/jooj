@@ -8,8 +8,17 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        background: "#212B21",
+        headingText: "#C5D3AD",  
+        paragraphText: "#A2A79A",  
+        navLink: "#C5D3AD",   
+        ctaBg: "#212B21", 
+        // ctaText: "#212B21",  
+        inputBg: "#FAFAFA",          
+        inputCta: "#212B21",         
+      },
+      backgroundImage: {
+        'card-gradient': "url('/assets/bg-gradient.webp')",
       },
     },
   },
